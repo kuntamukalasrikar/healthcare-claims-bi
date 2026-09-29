@@ -1,0 +1,7 @@
+denial_reason,denied_claims,pct_of_denials,allowed_value_at_risk
+Missing prior authorization,1533,26.4,2047757.0
+Out-of-network provider,1386,23.9,1514289.0
+Missing/invalid information,973,16.7,1287221.0
+Duplicate claim submission,769,13.2,1026921.0
+Service not covered,746,12.8,981612.0
+Timely filing limit exceeded,403,6.9,904258.0

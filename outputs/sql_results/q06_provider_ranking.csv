@@ -1,0 +1,31 @@
+specialty,provider_name,network_status,claims,paid,avg_paid_per_claim,denial_rate_pct,rank_in_specialty
+Behavioral Health,Silverline Wellness Group #358,In-Network,146,24132.0,165.0,3.4,1
+Behavioral Health,Pinecrest Wellness Group #83,In-Network,147,23138.0,157.0,6.1,2
+Behavioral Health,Lakeside Wellness Group #56,In-Network,151,22187.0,147.0,4.0,3
+Cardiology,Pinecrest Heart Center #240,In-Network,151,155116.0,1027.0,6.0,1
+Cardiology,Cedar Ridge Heart Center #207,In-Network,153,151051.0,987.0,5.9,2
+Cardiology,Oak Valley Heart Center #171,In-Network,165,146272.0,886.0,5.5,3
+Emergency Medicine,Pinecrest Emergency Care #32,In-Network,149,207385.0,1392.0,9.4,1
+Emergency Medicine,Cedar Ridge Emergency Care #318,In-Network,166,197044.0,1187.0,4.8,2
+Emergency Medicine,Pinecrest Emergency Care #248,In-Network,160,193888.0,1212.0,4.4,3
+General Hospital,Riverbend Medical Center #289,In-Network,135,1659071.0,12289.0,5.9,1
+General Hospital,Oak Valley Medical Center #379,In-Network,173,1606283.0,9285.0,6.4,2
+General Hospital,Silverline Medical Center #28,In-Network,182,1545064.0,8489.0,5.5,3
+Oncology,Brookfield Cancer Institute #393,In-Network,154,592506.0,3847.0,14.3,1
+Oncology,Summit Cancer Institute #173,In-Network,178,560482.0,3149.0,8.4,2
+Oncology,Riverbend Cancer Institute #225,In-Network,135,468840.0,3473.0,4.4,3
+Orthopedics,Meadowbrook Ortho & Spine #345,In-Network,166,236395.0,1424.0,8.4,1
+Orthopedics,Meadowbrook Ortho & Spine #309,In-Network,169,210346.0,1245.0,8.3,2
+Orthopedics,Oak Valley Ortho & Spine #53,In-Network,160,200824.0,1255.0,11.3,3
+Pediatrics,Summit Children's Clinic #284,In-Network,166,17349.0,105.0,7.2,1
+Pediatrics,Brookfield Children's Clinic #245,In-Network,163,16634.0,102.0,8.6,2
+Pediatrics,Riverbend Children's Clinic #322,In-Network,165,16250.0,98.0,4.2,3
+Pharmacy,Harbor Pharmacy #9,In-Network,156,16604.0,106.0,5.8,1
+Pharmacy,Riverbend Pharmacy #2,In-Network,172,14739.0,86.0,5.8,2
+Pharmacy,Summit Pharmacy #198,In-Network,158,12812.0,81.0,6.3,3
+Primary Care,Silverline Family Clinic #372,In-Network,171,22018.0,129.0,6.4,1
+Primary Care,Westfield Family Clinic #31,In-Network,145,20389.0,141.0,4.1,2
+Primary Care,Northgate Family Clinic #270,In-Network,172,19653.0,114.0,3.5,3
+Radiology,Riverbend Imaging #293,In-Network,158,64495.0,408.0,14.6,1
+Radiology,Lakeside Imaging #340,In-Network,163,63221.0,388.0,12.3,2
+Radiology,Silverline Imaging #190,In-Network,139,62655.0,451.0,11.5,3

@@ -1,0 +1,21 @@
+network_status,specialty,claims,denied,denial_rate_pct,denied_allowed_value
+Out-of-Network,Oncology,472,127,26.9,327761.0
+Out-of-Network,Orthopedics,1023,273,26.7,300882.0
+Out-of-Network,Radiology,1196,297,24.8,111197.0
+Out-of-Network,General Hospital,744,155,20.8,1261552.0
+Out-of-Network,Cardiology,1240,249,20.1,185382.0
+Out-of-Network,Primary Care,3776,719,19.0,68279.0
+Out-of-Network,Pediatrics,747,141,18.9,11511.0
+Out-of-Network,Behavioral Health,1448,272,18.8,32644.0
+Out-of-Network,Emergency Medicine,1164,217,18.6,224881.0
+Out-of-Network,Pharmacy,399,73,18.3,5327.0
+In-Network,Radiology,4763,558,11.7,271975.0
+In-Network,Oncology,2801,308,11.0,1112069.0
+In-Network,Orthopedics,2988,305,10.2,503635.0
+In-Network,General Hospital,2843,194,6.8,2676915.0
+In-Network,Pharmacy,5047,316,6.3,29110.0
+In-Network,Emergency Medicine,3134,191,6.1,252914.0
+In-Network,Pediatrics,3715,228,6.1,28724.0
+In-Network,Cardiology,3314,200,6.0,212910.0
+In-Network,Behavioral Health,4617,260,5.6,41567.0
+In-Network,Primary Care,13491,727,5.4,102820.0

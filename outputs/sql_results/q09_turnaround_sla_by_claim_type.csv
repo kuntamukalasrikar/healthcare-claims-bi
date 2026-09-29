@@ -1,0 +1,5 @@
+claim_type,processed_claims,avg_tat_days,max_tat_days,pct_within_sla,sla_breaches
+Inpatient,3447,23.7,76,83.2,578
+Outpatient,21330,11.8,69,97.4,551
+Pharmacy,5245,11.5,60,97.5,132
+Professional,26833,11.5,84,97.7,626
