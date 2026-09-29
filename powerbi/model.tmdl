@@ -1,0 +1,509 @@
+createOrReplace
+
+	table dim_plan
+
+		column plan_id
+			dataType: string
+			summarizeBy: none
+			sourceColumn: plan_id
+
+		column plan_name
+			dataType: string
+			summarizeBy: none
+			sourceColumn: plan_name
+
+		column line_of_business
+			dataType: string
+			summarizeBy: none
+			sourceColumn: line_of_business
+
+		column monthly_premium
+			dataType: decimal
+			formatString: \$#,0.00
+			sourceColumn: monthly_premium
+
+		partition dim_plan = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\dim_plan.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"plan_id", type text}, {"plan_name", type text}, {"line_of_business", type text}, {"monthly_premium", Currency.Type}}, "en-US")
+					in
+						Typed
+
+	table dim_member
+
+		column member_id
+			dataType: string
+			summarizeBy: none
+			sourceColumn: member_id
+
+		column gender
+			dataType: string
+			summarizeBy: none
+			sourceColumn: gender
+
+		column birth_year
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: birth_year
+
+		column age_band
+			dataType: string
+			summarizeBy: none
+			sourceColumn: age_band
+
+		column state
+			dataType: string
+			summarizeBy: none
+			sourceColumn: state
+
+		column plan_id
+			dataType: string
+			summarizeBy: none
+			sourceColumn: plan_id
+
+		column enrollment_start
+			dataType: dateTime
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			sourceColumn: enrollment_start
+
+		column enrollment_end
+			dataType: dateTime
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			sourceColumn: enrollment_end
+
+		column chronic_condition_flag
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: chronic_condition_flag
+
+		partition dim_member = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\dim_member.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"member_id", type text}, {"gender", type text}, {"birth_year", Int64.Type}, {"age_band", type text}, {"state", type text}, {"plan_id", type text}, {"enrollment_start", type date}, {"enrollment_end", type date}, {"chronic_condition_flag", Int64.Type}}, "en-US")
+					in
+						Typed
+
+	table dim_provider
+
+		column provider_id
+			dataType: string
+			summarizeBy: none
+			sourceColumn: provider_id
+
+		column npi
+			dataType: string
+			summarizeBy: none
+			sourceColumn: npi
+
+		column provider_name
+			dataType: string
+			summarizeBy: none
+			sourceColumn: provider_name
+
+		column specialty
+			dataType: string
+			summarizeBy: none
+			sourceColumn: specialty
+
+		column network_status
+			dataType: string
+			summarizeBy: none
+			sourceColumn: network_status
+
+		column state
+			dataType: string
+			summarizeBy: none
+			sourceColumn: state
+
+		partition dim_provider = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\dim_provider.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"provider_id", type text}, {"npi", type text}, {"provider_name", type text}, {"specialty", type text}, {"network_status", type text}, {"state", type text}}, "en-US")
+					in
+						Typed
+
+	table dim_date
+		dataCategory: Time
+
+		column date_key
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: date_key
+
+		column full_date
+			dataType: dateTime
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			isKey
+			sourceColumn: full_date
+
+		column year
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: year
+
+		column quarter
+			dataType: string
+			summarizeBy: none
+			sourceColumn: quarter
+
+		column month_num
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: month_num
+
+		column month_name
+			dataType: string
+			summarizeBy: none
+			sortByColumn: month_num
+			sourceColumn: month_name
+
+		column year_month
+			dataType: string
+			summarizeBy: none
+			sourceColumn: year_month
+
+		column is_weekend
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: is_weekend
+
+		partition dim_date = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\dim_date.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"date_key", Int64.Type}, {"full_date", type date}, {"year", Int64.Type}, {"quarter", type text}, {"month_num", Int64.Type}, {"month_name", type text}, {"year_month", type text}, {"is_weekend", Int64.Type}}, "en-US")
+					in
+						Typed
+
+	table fact_claims
+
+		column claim_id
+			dataType: string
+			summarizeBy: none
+			sourceColumn: claim_id
+
+		column member_id
+			dataType: string
+			summarizeBy: none
+			isHidden
+			sourceColumn: member_id
+
+		column provider_id
+			dataType: string
+			summarizeBy: none
+			isHidden
+			sourceColumn: provider_id
+
+		column plan_id
+			dataType: string
+			summarizeBy: none
+			isHidden
+			sourceColumn: plan_id
+
+		column service_date_key
+			dataType: int64
+			summarizeBy: none
+			isHidden
+			sourceColumn: service_date_key
+
+		column service_date
+			dataType: dateTime
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			sourceColumn: service_date
+
+		column received_date
+			dataType: dateTime
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			sourceColumn: received_date
+
+		column processed_date
+			dataType: dateTime
+			formatString: yyyy-mm-dd
+			summarizeBy: none
+			sourceColumn: processed_date
+
+		column claim_type
+			dataType: string
+			summarizeBy: none
+			sourceColumn: claim_type
+
+		column diagnosis_code
+			dataType: string
+			summarizeBy: none
+			sourceColumn: diagnosis_code
+
+		column billed_amount
+			dataType: decimal
+			formatString: \$#,0.00
+			sourceColumn: billed_amount
+
+		column allowed_amount
+			dataType: decimal
+			formatString: \$#,0.00
+			sourceColumn: allowed_amount
+
+		column paid_amount
+			dataType: decimal
+			formatString: \$#,0.00
+			sourceColumn: paid_amount
+
+		column member_responsibility
+			dataType: decimal
+			formatString: \$#,0.00
+			sourceColumn: member_responsibility
+
+		column claim_status
+			dataType: string
+			summarizeBy: none
+			sourceColumn: claim_status
+
+		column denial_reason
+			dataType: string
+			summarizeBy: none
+			sourceColumn: denial_reason
+
+		column turnaround_days
+			dataType: double
+			sourceColumn: turnaround_days
+
+		column within_sla_flag
+			dataType: int64
+			sourceColumn: within_sla_flag
+
+		partition fact_claims = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\fact_claims.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"claim_id", type text}, {"member_id", type text}, {"provider_id", type text}, {"plan_id", type text}, {"service_date_key", Int64.Type}, {"service_date", type date}, {"received_date", type date}, {"processed_date", type date}, {"claim_type", type text}, {"diagnosis_code", type text}, {"billed_amount", Currency.Type}, {"allowed_amount", Currency.Type}, {"paid_amount", Currency.Type}, {"member_responsibility", Currency.Type}, {"claim_status", type text}, {"denial_reason", type text}, {"turnaround_days", type number}, {"within_sla_flag", Int64.Type}}, "en-US")
+					in
+						Typed
+
+	table fact_member_months
+
+		column member_id
+			dataType: string
+			summarizeBy: none
+			isHidden
+			sourceColumn: member_id
+
+		column plan_id
+			dataType: string
+			summarizeBy: none
+			isHidden
+			sourceColumn: plan_id
+
+		column month_key
+			dataType: int64
+			summarizeBy: none
+			isHidden
+			sourceColumn: month_key
+
+		column year_month
+			dataType: string
+			summarizeBy: none
+			sourceColumn: year_month
+
+		partition fact_member_months = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\fact_member_months.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"member_id", type text}, {"plan_id", type text}, {"month_key", Int64.Type}, {"year_month", type text}}, "en-US")
+					in
+						Typed
+
+	table dq_test_results
+
+		column stage
+			dataType: string
+			summarizeBy: none
+			sourceColumn: stage
+
+		column test_case_id
+			dataType: string
+			summarizeBy: none
+			sourceColumn: test_case_id
+
+		column column
+			dataType: string
+			summarizeBy: none
+			sourceColumn: column
+
+		column rule
+			dataType: string
+			summarizeBy: none
+			sourceColumn: rule
+
+		column severity
+			dataType: string
+			summarizeBy: none
+			sourceColumn: severity
+
+		column expected
+			dataType: string
+			summarizeBy: none
+			sourceColumn: expected
+
+		column actual
+			dataType: string
+			summarizeBy: none
+			sourceColumn: actual
+
+		column rows_failed
+			dataType: int64
+			sourceColumn: rows_failed
+
+		column pct_failed
+			dataType: double
+			sourceColumn: pct_failed
+
+		column status
+			dataType: string
+			summarizeBy: none
+			sourceColumn: status
+
+		partition dq_test_results = m
+			mode: import
+			source =
+					let
+						Source = Csv.Document(File.Contents("C:\Users\kunta\Documents\healthcare-claims-bi\dq_test_results.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+						Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+						Typed = Table.TransformColumnTypes(Promoted, {{"stage", type text}, {"test_case_id", type text}, {"column", type text}, {"rule", type text}, {"severity", type text}, {"expected", type text}, {"actual", type text}, {"rows_failed", Int64.Type}, {"pct_failed", type number}, {"status", type text}}, "en-US")
+					in
+						Typed
+
+	table _Measures
+
+		measure 'Total Claims' = COUNTROWS ( fact_claims )
+			formatString: #,0
+
+		measure 'Total Billed' = SUM ( fact_claims[billed_amount] )
+			formatString: \$#,0
+
+		measure 'Total Allowed' = SUM ( fact_claims[allowed_amount] )
+			formatString: \$#,0
+
+		measure 'Total Paid' = SUM ( fact_claims[paid_amount] )
+			formatString: \$#,0
+
+		measure 'Member Months' = COUNTROWS ( fact_member_months )
+			formatString: #,0
+
+		measure 'Paid PMPM' = DIVIDE ( [Total Paid], [Member Months] )
+			formatString: \$#,0.00
+
+		measure 'Claims per 1000' = DIVIDE ( [Total Claims] * 12 * 1000, [Member Months] )
+			formatString: #,0
+
+		measure 'Avg Paid per Claim' = DIVIDE ( [Total Paid], [Total Claims] )
+			formatString: \$#,0
+
+		measure 'Discount from Billed %' = 1 - DIVIDE ( [Total Allowed], [Total Billed] )
+			formatString: 0.0%
+
+		measure 'Denied Claims' = CALCULATE ( [Total Claims], fact_claims[claim_status] = "Denied" )
+			formatString: #,0
+
+		measure 'Denial Rate %' = DIVIDE ( [Denied Claims], [Total Claims] )
+			formatString: 0.00%
+
+		measure 'Denied Allowed $ at Risk' = CALCULATE ( [Total Allowed], fact_claims[claim_status] = "Denied" )
+			formatString: \$#,0
+
+		measure 'Out-of-Network Denial Rate %' = CALCULATE ( [Denial Rate %], dim_provider[network_status] = "Out-of-Network" )
+			formatString: 0.0%
+
+		measure 'Avg Turnaround Days' = AVERAGE ( fact_claims[turnaround_days] )
+			formatString: 0.0
+
+		measure 'SLA Compliance %' = DIVIDE ( CALCULATE ( [Total Claims], fact_claims[within_sla_flag] = 1 ), CALCULATE ( [Total Claims], NOT ISBLANK ( fact_claims[processed_date] ) ) )
+			formatString: 0.00%
+
+		measure 'Pending Claims' = CALCULATE ( [Total Claims], fact_claims[claim_status] = "Pending" )
+			formatString: #,0
+
+		measure 'Paid PMPM PM' = CALCULATE ( [Paid PMPM], DATEADD ( dim_date[full_date], -1, MONTH ) )
+			formatString: \$#,0.00
+
+		measure 'Paid PMPM MoM %' = DIVIDE ( [Paid PMPM] - [Paid PMPM PM], [Paid PMPM PM] )
+			formatString: 0.0%
+
+		measure 'Total Paid YTD' = TOTALYTD ( [Total Paid], dim_date[full_date] )
+			formatString: \$#,0
+
+		measure 'Total Paid PY' = CALCULATE ( [Total Paid], SAMEPERIODLASTYEAR ( dim_date[full_date] ) )
+			formatString: \$#,0
+
+		measure 'Total Paid YoY %' = DIVIDE ( [Total Paid] - [Total Paid PY], [Total Paid PY] )
+			formatString: 0.0%
+
+		measure 'KPI Colour Denial' = SWITCH ( TRUE (), [Denial Rate %] > 0.15, "#C0392B", [Denial Rate %] > 0.10, "#D9822B", "#2E7D32" )
+
+		measure 'Selected LOB Title' = "Claims Performance - " & SELECTEDVALUE ( dim_plan[line_of_business], "All Lines of Business" )
+
+		measure 'DQ Tests Failed (Raw)' = CALCULATE ( COUNTROWS ( dq_test_results ), dq_test_results[stage] = "RAW", dq_test_results[status] = "FAIL" )
+			formatString: 0
+
+		measure 'DQ Tests Passed (Clean)' = CALCULATE ( COUNTROWS ( dq_test_results ), dq_test_results[stage] = "CLEAN", dq_test_results[status] = "PASS" )
+			formatString: 0
+
+		measure 'DQ Pass Rate (Clean)' = DIVIDE ( [DQ Tests Passed (Clean)], CALCULATE ( COUNTROWS ( dq_test_results ), dq_test_results[stage] = "CLEAN" ) )
+			formatString: 0%
+
+		column Placeholder
+			dataType: string
+			isHidden
+			summarizeBy: none
+			sourceColumn: Placeholder
+
+		partition _Measures = m
+			mode: import
+			source =
+					#table(type table [Placeholder = text], {})
+
+	relationship rel_fact_claims_member_id
+		fromColumn: fact_claims.member_id
+		toColumn: dim_member.member_id
+
+	relationship rel_fact_claims_provider_id
+		fromColumn: fact_claims.provider_id
+		toColumn: dim_provider.provider_id
+
+	relationship rel_fact_claims_plan_id
+		fromColumn: fact_claims.plan_id
+		toColumn: dim_plan.plan_id
+
+	relationship rel_fact_claims_service_date_key
+		fromColumn: fact_claims.service_date_key
+		toColumn: dim_date.date_key
+
+	relationship rel_fact_member_months_member_id
+		fromColumn: fact_member_months.member_id
+		toColumn: dim_member.member_id
+
+	relationship rel_fact_member_months_plan_id
+		fromColumn: fact_member_months.plan_id
+		toColumn: dim_plan.plan_id
+
+	relationship rel_fact_member_months_month_key
+		fromColumn: fact_member_months.month_key
+		toColumn: dim_date.date_key
