@@ -1,0 +1,12 @@
+issue,action,rows
+Exact duplicate rows,removed,685
+Duplicate claim_id with different values,quarantined,35
+Status casing/whitespace,standardised,1191
+Orphan member_id (not in eligibility),quarantined,177
+Missing/unknown provider_id,quarantined,239
+Non-positive billed_amount,quarantined,177
+Future service_date,quarantined,60
+processed_date before received_date,quarantined,236
+paid_amount exceeds allowed_amount,quarantined,189
+Denied claim with paid_amount > 0 (set to 0 per rule BR-04),corrected,25
+Invalid ICD-10 code mapped to R69 'Unspecified',corrected,176

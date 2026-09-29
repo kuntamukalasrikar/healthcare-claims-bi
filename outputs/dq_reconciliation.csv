@@ -1,0 +1,6 @@
+check,value
+Raw rows received,60720
+Exact duplicates removed,685
+Rows quarantined,1113
+Rows loaded to warehouse,58922
+Reconciles (raw = dupes + quarantined + loaded),True

@@ -1,0 +1,31 @@
+stage,test_case_id,column,rule,severity,expected,actual,rows_failed,pct_failed,status
+RAW,DQ-01,claims.claim_id,claim_id is unique (no duplicate submissions),Critical,0 failing rows,720 failing rows,720,1.186,FAIL
+RAW,DQ-02,claims.claim_id,claim_id is not null,Critical,0 failing rows,0 failing rows,0,0.0,PASS
+RAW,DQ-03,claims.member_id,member_id exists in members (referential integrity),Critical,0 failing rows,180 failing rows,180,0.296,FAIL
+RAW,DQ-04,claims.provider_id,provider_id is not null,Critical,0 failing rows,240 failing rows,240,0.395,FAIL
+RAW,DQ-05,claims.provider_id,provider_id exists in providers,High,0 failing rows,0 failing rows,0,0.0,PASS
+RAW,DQ-06,claims.billed_amount,billed_amount > 0,Critical,0 failing rows,180 failing rows,180,0.296,FAIL
+RAW,DQ-07,claims.paid_amount,paid_amount <= allowed_amount <= billed_amount,High,0 failing rows,194 failing rows,194,0.319,FAIL
+RAW,DQ-08,claims.claim_status,"claim_status in allowed list {Paid, Denied, Pending}",Medium,0 failing rows,1200 failing rows,1200,1.976,FAIL
+RAW,DQ-09,claims.paid_amount,Denied claims have paid_amount = 0,High,0 failing rows,58 failing rows,58,0.096,FAIL
+RAW,DQ-10,claims.denial_reason,Denied claims carry a denial_reason,Medium,0 failing rows,0 failing rows,0,0.0,PASS
+RAW,DQ-11,claims.service_date,service_date not in the future,Critical,0 failing rows,60 failing rows,60,0.099,FAIL
+RAW,DQ-12,claims.processed_date,processed_date >= received_date,High,0 failing rows,240 failing rows,240,0.395,FAIL
+RAW,DQ-13,claims.received_date,received_date >= service_date,High,0 failing rows,60 failing rows,60,0.099,FAIL
+RAW,DQ-14,claims.diagnosis_code,diagnosis_code matches ICD-10 format,Medium,0 failing rows,180 failing rows,180,0.296,FAIL
+RAW,DQ-15,claims.processed_date,Pending claims have no processed_date,Low,0 failing rows,8 failing rows,8,0.013,FAIL
+CLEAN,DQ-01,claims.claim_id,claim_id is unique (no duplicate submissions),Critical,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-02,claims.claim_id,claim_id is not null,Critical,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-03,claims.member_id,member_id exists in members (referential integrity),Critical,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-04,claims.provider_id,provider_id is not null,Critical,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-05,claims.provider_id,provider_id exists in providers,High,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-06,claims.billed_amount,billed_amount > 0,Critical,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-07,claims.paid_amount,paid_amount <= allowed_amount <= billed_amount,High,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-08,claims.claim_status,"claim_status in allowed list {Paid, Denied, Pending}",Medium,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-09,claims.paid_amount,Denied claims have paid_amount = 0,High,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-10,claims.denial_reason,Denied claims carry a denial_reason,Medium,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-11,claims.service_date,service_date not in the future,Critical,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-12,claims.processed_date,processed_date >= received_date,High,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-13,claims.received_date,received_date >= service_date,High,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-14,claims.diagnosis_code,diagnosis_code matches ICD-10 format,Medium,0 failing rows,0 failing rows,0,0.0,PASS
+CLEAN,DQ-15,claims.processed_date,Pending claims have no processed_date,Low,0 failing rows,0 failing rows,0,0.0,PASS
