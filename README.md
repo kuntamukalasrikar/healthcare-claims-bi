@@ -35,7 +35,7 @@ Each rule is written like a test case: an ID, a severity, an expected result and
 
 | Result | Value |
 |---|---|
-| Test cases | 15 (5 Critical, 6 High, 3 Medium, 1 Low) |
+| Test cases | 15 (6 Critical, 5 High, 3 Medium, 1 Low) |
 | Failing on RAW extract | **12 of 15** |
 | Failing after cleansing | **0 of 15** |
 | Exact duplicates removed | 685 |
@@ -59,7 +59,7 @@ See `sql/00_schema.sql`. `fact_member_months` exists because **PMPM has to be di
 | 5 | **Members with a chronic condition cost $700 PMPM vs $235** (3.0x) | A clear care-management target population |
 | 6 | **The top 5% of members drive 25.7% of paid**, and the top 20% drive 61.1% | High-cost-claimant monitoring |
 | 7 | **Inpatient claims meet the 30-day SLA only 83.2% of the time** (avg 23.7 days) vs 97%+ for other types. That's 578 breaches | Operations focus area |
-| 8 | Claim volume in **Dec–Feb runs about 50% above** other months (flu season) | Staffing and capacity planning |
+| 8 | Claim volume in **Dec–Feb runs about 40–55% above** other months (flu season) | Staffing and capacity planning |
 
 ![PMPM trend](images/pmpm_trend.png)
 ![Denials](images/denials_by_network.png)
@@ -112,8 +112,23 @@ python run_all.py        # about 20 seconds: generates data, runs the DQ suite, 
 src/        01_generate_data · 02_data_quality · 03_build_warehouse · 04_run_sql · 05_build_reports
 sql/        00_schema.sql · 01_kpi_analysis.sql
 powerbi/    Claims_BI_Dashboard.pbix · model.tmdl · gen_tmdl.py · data/ (star-schema CSVs) · DAX_measures.md · BUILD_GUIDE.md · claims_theme.json
+data/       raw/ (source extract with injected defects) · clean/ (validated claims)
 outputs/    DQ results, reconciliation, quarantine, sql_results/
 reports/    Monthly_Claims_Report.xlsx
 docs/       metric_definitions.md
-images/     charts
+images/     analysis charts and Power BI dashboard screenshots
 ```
+
+## Skills demonstrated
+| Area | Where in this project |
+|---|---|
+| SQL | Star-schema DDL with constraints; 10 analyses using CTEs, joins, LAG, RANK, NTILE, window SUM |
+| Power BI | Star-schema model, 26 DAX measures, time intelligence, RLS, drill-through, 5-page report |
+| Data quality | 15 rule-based test cases, quarantine with reasons, regression re-test, row-count reconciliation |
+| Python / ETL | pandas pipeline: generate → validate → cleanse → load → report |
+| Excel | Formula-driven reporting pack with native charts |
+| Documentation | Metric definitions, business rules, known limitations |
+
+## About me
+**Srikar Kuntamukala.** I'm moving from QA and API/data validation (Tech Mahindra) into data analytics. This project applies a tester's discipline to BI: every rule is tested, every number is reconciled, and every metric is defined.
+[LinkedIn](https://linkedin.com/in/srikar-kuntamukala) · [GitHub](https://github.com/kuntamukalasrikar)
