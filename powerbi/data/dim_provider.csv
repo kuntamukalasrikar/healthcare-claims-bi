@@ -1,0 +1,401 @@
+provider_id,npi,provider_name,specialty,network_status,state
+PR0001,1952207802,Meadowbrook Emergency Care #1,Emergency Medicine,Out-of-Network,CA
+PR0002,1115527534,Riverbend Pharmacy #2,Pharmacy,In-Network,TX
+PR0003,1578615325,Westfield Family Clinic #3,Primary Care,In-Network,OH
+PR0004,1270420470,Northgate Medical Center #4,General Hospital,Out-of-Network,NY
+PR0005,1162621495,Lakeside Children's Clinic #5,Pediatrics,Out-of-Network,FL
+PR0006,1304164467,Oak Valley Family Clinic #6,Primary Care,In-Network,NY
+PR0007,1987997691,Brookfield Family Clinic #7,Primary Care,In-Network,MN
+PR0008,1619451204,Riverbend Emergency Care #8,Emergency Medicine,In-Network,FL
+PR0009,1999091030,Harbor Pharmacy #9,Pharmacy,In-Network,MN
+PR0010,1825157951,Silverline Imaging #10,Radiology,In-Network,TX
+PR0011,1716959726,Brookfield Family Clinic #11,Primary Care,Out-of-Network,NY
+PR0012,1303466382,Summit Heart Center #12,Cardiology,In-Network,TX
+PR0013,1300391643,Silverline Family Clinic #13,Primary Care,In-Network,GA
+PR0014,1600421532,Meadowbrook Family Clinic #14,Primary Care,In-Network,NY
+PR0015,1973182501,Riverbend Emergency Care #15,Emergency Medicine,In-Network,OH
+PR0016,1349116293,Harbor Family Clinic #16,Primary Care,In-Network,MN
+PR0017,1634764312,Summit Imaging #17,Radiology,In-Network,MN
+PR0018,1974268925,Summit Heart Center #18,Cardiology,Out-of-Network,GA
+PR0019,1769345704,Brookfield Family Clinic #19,Primary Care,In-Network,CA
+PR0020,1959724480,Oak Valley Children's Clinic #20,Pediatrics,In-Network,GA
+PR0021,1343701570,Northgate Family Clinic #21,Primary Care,In-Network,OH
+PR0022,1678906401,Summit Imaging #22,Radiology,In-Network,GA
+PR0023,1216728837,Northgate Imaging #23,Radiology,In-Network,GA
+PR0024,1043355258,Summit Wellness Group #24,Behavioral Health,In-Network,AZ
+PR0025,1449805570,Silverline Family Clinic #25,Primary Care,In-Network,GA
+PR0026,1792739280,Northgate Family Clinic #26,Primary Care,In-Network,OH
+PR0027,1416714788,Westfield Ortho & Spine #27,Orthopedics,In-Network,FL
+PR0028,1272051626,Silverline Medical Center #28,General Hospital,In-Network,MN
+PR0029,1403016819,Silverline Cancer Institute #29,Oncology,In-Network,TX
+PR0030,1145119493,Northgate Pharmacy #30,Pharmacy,In-Network,OH
+PR0031,1182368699,Westfield Family Clinic #31,Primary Care,In-Network,FL
+PR0032,1135171928,Pinecrest Emergency Care #32,Emergency Medicine,In-Network,GA
+PR0033,1971539743,Summit Imaging #33,Radiology,Out-of-Network,NY
+PR0034,1621183941,Summit Family Clinic #34,Primary Care,In-Network,TX
+PR0035,1014866482,Westfield Family Clinic #35,Primary Care,In-Network,MN
+PR0036,1561916253,Brookfield Heart Center #36,Cardiology,In-Network,AZ
+PR0037,1417290025,Meadowbrook Children's Clinic #37,Pediatrics,In-Network,CA
+PR0038,1546227910,Oak Valley Children's Clinic #38,Pediatrics,In-Network,CA
+PR0039,1857264797,Cedar Ridge Emergency Care #39,Emergency Medicine,In-Network,OH
+PR0040,1412030604,Riverbend Family Clinic #40,Primary Care,In-Network,AZ
+PR0041,1300844047,Brookfield Emergency Care #41,Emergency Medicine,Out-of-Network,MN
+PR0042,1361121848,Northgate Ortho & Spine #42,Orthopedics,In-Network,AZ
+PR0043,1704986219,Northgate Family Clinic #43,Primary Care,In-Network,TX
+PR0044,1087131109,Westfield Imaging #44,Radiology,In-Network,TX
+PR0045,1792478861,Brookfield Children's Clinic #45,Pediatrics,In-Network,FL
+PR0046,1991175731,Meadowbrook Family Clinic #46,Primary Care,In-Network,NY
+PR0047,1446475103,Summit Cancer Institute #47,Oncology,In-Network,TX
+PR0048,1466410669,Summit Children's Clinic #48,Pediatrics,Out-of-Network,MN
+PR0049,1897280477,Pinecrest Family Clinic #49,Primary Care,In-Network,GA
+PR0050,1802482943,Summit Ortho & Spine #50,Orthopedics,Out-of-Network,FL
+PR0051,1495601206,Oak Valley Ortho & Spine #51,Orthopedics,In-Network,AZ
+PR0052,1376859203,Silverline Emergency Care #52,Emergency Medicine,In-Network,GA
+PR0053,1903537012,Oak Valley Ortho & Spine #53,Orthopedics,In-Network,CA
+PR0054,1410808599,Brookfield Ortho & Spine #54,Orthopedics,In-Network,CA
+PR0055,1924008082,Cedar Ridge Cancer Institute #55,Oncology,In-Network,GA
+PR0056,1435205980,Lakeside Wellness Group #56,Behavioral Health,In-Network,OH
+PR0057,1559207704,Lakeside Family Clinic #57,Primary Care,In-Network,MN
+PR0058,1528612414,Oak Valley Imaging #58,Radiology,In-Network,MN
+PR0059,1797449252,Lakeside Family Clinic #59,Primary Care,Out-of-Network,MN
+PR0060,1780485702,Lakeside Family Clinic #60,Primary Care,In-Network,GA
+PR0061,1103925715,Harbor Medical Center #61,General Hospital,Out-of-Network,AZ
+PR0062,1835759252,Summit Children's Clinic #62,Pediatrics,In-Network,NY
+PR0063,1117226278,Westfield Family Clinic #63,Primary Care,In-Network,AZ
+PR0064,1815483957,Summit Ortho & Spine #64,Orthopedics,In-Network,GA
+PR0065,1700292984,Brookfield Heart Center #65,Cardiology,In-Network,OH
+PR0066,1585219513,Harbor Wellness Group #66,Behavioral Health,In-Network,FL
+PR0067,1050860738,Pinecrest Pharmacy #67,Pharmacy,In-Network,MN
+PR0068,1853821758,Lakeside Family Clinic #68,Primary Care,Out-of-Network,TX
+PR0069,1711435346,Silverline Medical Center #69,General Hospital,In-Network,TX
+PR0070,1580549044,Cedar Ridge Ortho & Spine #70,Orthopedics,Out-of-Network,OH
+PR0071,1230654991,Pinecrest Cancer Institute #71,Oncology,In-Network,NY
+PR0072,1772462108,Northgate Family Clinic #72,Primary Care,In-Network,AZ
+PR0073,1234765864,Pinecrest Medical Center #73,General Hospital,Out-of-Network,TX
+PR0074,1434909865,Northgate Imaging #74,Radiology,In-Network,GA
+PR0075,1360236409,Brookfield Pharmacy #75,Pharmacy,In-Network,FL
+PR0076,1418309535,Westfield Medical Center #76,General Hospital,In-Network,OH
+PR0077,1924446766,Harbor Ortho & Spine #77,Orthopedics,In-Network,NY
+PR0078,1770980494,Oak Valley Wellness Group #78,Behavioral Health,In-Network,FL
+PR0079,1710632976,Silverline Children's Clinic #79,Pediatrics,In-Network,NY
+PR0080,1688281848,Lakeside Wellness Group #80,Behavioral Health,Out-of-Network,TX
+PR0081,1751500871,Pinecrest Family Clinic #81,Primary Care,In-Network,AZ
+PR0082,1733643612,Northgate Children's Clinic #82,Pediatrics,In-Network,CA
+PR0083,1783055865,Pinecrest Wellness Group #83,Behavioral Health,In-Network,TX
+PR0084,1049127808,Harbor Family Clinic #84,Primary Care,Out-of-Network,MN
+PR0085,1831620000,Silverline Wellness Group #85,Behavioral Health,Out-of-Network,OH
+PR0086,1310606817,Harbor Family Clinic #86,Primary Care,In-Network,NY
+PR0087,1170335300,Riverbend Imaging #87,Radiology,In-Network,NY
+PR0088,1193648942,Harbor Imaging #88,Radiology,Out-of-Network,AZ
+PR0089,1941849169,Silverline Family Clinic #89,Primary Care,In-Network,NY
+PR0090,1826373024,Northgate Medical Center #90,General Hospital,Out-of-Network,TX
+PR0091,1397008881,Harbor Family Clinic #91,Primary Care,Out-of-Network,GA
+PR0092,1912028949,Pinecrest Wellness Group #92,Behavioral Health,In-Network,NY
+PR0093,1561723068,Pinecrest Pharmacy #93,Pharmacy,In-Network,TX
+PR0094,1841995443,Brookfield Imaging #94,Radiology,In-Network,FL
+PR0095,1810266085,Westfield Pharmacy #95,Pharmacy,In-Network,CA
+PR0096,1249713668,Northgate Imaging #96,Radiology,Out-of-Network,MN
+PR0097,1506106400,Meadowbrook Pharmacy #97,Pharmacy,In-Network,AZ
+PR0098,1323650993,Pinecrest Medical Center #98,General Hospital,In-Network,FL
+PR0099,1544716614,Cedar Ridge Imaging #99,Radiology,Out-of-Network,FL
+PR0100,1843021074,Brookfield Pharmacy #100,Pharmacy,In-Network,TX
+PR0101,1409598808,Brookfield Ortho & Spine #101,Orthopedics,In-Network,FL
+PR0102,1047406750,Northgate Ortho & Spine #102,Orthopedics,In-Network,FL
+PR0103,1049522027,Westfield Wellness Group #103,Behavioral Health,In-Network,OH
+PR0104,1757316375,Summit Imaging #104,Radiology,In-Network,TX
+PR0105,1647608067,Cedar Ridge Family Clinic #105,Primary Care,In-Network,OH
+PR0106,1219368234,Harbor Children's Clinic #106,Pediatrics,In-Network,CA
+PR0107,1677207612,Harbor Cancer Institute #107,Oncology,In-Network,GA
+PR0108,1310530078,Pinecrest Family Clinic #108,Primary Care,Out-of-Network,MN
+PR0109,1472991294,Cedar Ridge Ortho & Spine #109,Orthopedics,Out-of-Network,MN
+PR0110,1205456256,Brookfield Family Clinic #110,Primary Care,In-Network,MN
+PR0111,1048109228,Oak Valley Family Clinic #111,Primary Care,In-Network,OH
+PR0112,1903311568,Brookfield Wellness Group #112,Behavioral Health,In-Network,OH
+PR0113,1565853376,Brookfield Family Clinic #113,Primary Care,In-Network,OH
+PR0114,1962776506,Silverline Wellness Group #114,Behavioral Health,Out-of-Network,AZ
+PR0115,1103076804,Cedar Ridge Ortho & Spine #115,Orthopedics,In-Network,CA
+PR0116,1397539183,Northgate Wellness Group #116,Behavioral Health,Out-of-Network,NY
+PR0117,1033578871,Oak Valley Emergency Care #117,Emergency Medicine,In-Network,CA
+PR0118,1798428345,Oak Valley Heart Center #118,Cardiology,In-Network,MN
+PR0119,1987717171,Northgate Family Clinic #119,Primary Care,Out-of-Network,FL
+PR0120,1227023306,Harbor Wellness Group #120,Behavioral Health,In-Network,FL
+PR0121,1918886604,Riverbend Emergency Care #121,Emergency Medicine,In-Network,CA
+PR0122,1415106962,Oak Valley Family Clinic #122,Primary Care,In-Network,NY
+PR0123,1708280760,Riverbend Pharmacy #123,Pharmacy,In-Network,GA
+PR0124,1445126257,Westfield Ortho & Spine #124,Orthopedics,In-Network,TX
+PR0125,1257484453,Pinecrest Family Clinic #125,Primary Care,In-Network,FL
+PR0126,1284155822,Summit Family Clinic #126,Primary Care,In-Network,MN
+PR0127,1229759726,Harbor Wellness Group #127,Behavioral Health,In-Network,GA
+PR0128,1986891480,Pinecrest Heart Center #128,Cardiology,In-Network,CA
+PR0129,1074634481,Harbor Medical Center #129,General Hospital,In-Network,MN
+PR0130,1441121672,Northgate Heart Center #130,Cardiology,In-Network,FL
+PR0131,1873886891,Pinecrest Family Clinic #131,Primary Care,In-Network,GA
+PR0132,1503950737,Silverline Family Clinic #132,Primary Care,In-Network,FL
+PR0133,1063021249,Cedar Ridge Wellness Group #133,Behavioral Health,Out-of-Network,GA
+PR0134,1371604755,Meadowbrook Family Clinic #134,Primary Care,In-Network,NY
+PR0135,1626304449,Cedar Ridge Pharmacy #135,Pharmacy,In-Network,FL
+PR0136,1119198341,Lakeside Family Clinic #136,Primary Care,Out-of-Network,OH
+PR0137,1751455341,Lakeside Pharmacy #137,Pharmacy,In-Network,NY
+PR0138,1661810604,Cedar Ridge Family Clinic #138,Primary Care,Out-of-Network,GA
+PR0139,1255108584,Northgate Cancer Institute #139,Oncology,In-Network,MN
+PR0140,1796552956,Harbor Family Clinic #140,Primary Care,In-Network,AZ
+PR0141,1380410903,Silverline Family Clinic #141,Primary Care,In-Network,CA
+PR0142,1388883554,Meadowbrook Wellness Group #142,Behavioral Health,In-Network,GA
+PR0143,1293841595,Pinecrest Family Clinic #143,Primary Care,In-Network,OH
+PR0144,1379134347,Summit Wellness Group #144,Behavioral Health,In-Network,NY
+PR0145,1801731244,Westfield Cancer Institute #145,Oncology,In-Network,FL
+PR0146,1018158534,Pinecrest Emergency Care #146,Emergency Medicine,In-Network,OH
+PR0147,1995415356,Northgate Children's Clinic #147,Pediatrics,In-Network,CA
+PR0148,1762462000,Pinecrest Pharmacy #148,Pharmacy,Out-of-Network,MN
+PR0149,1970597337,Westfield Medical Center #149,General Hospital,In-Network,NY
+PR0150,1661787204,Summit Wellness Group #150,Behavioral Health,Out-of-Network,NY
+PR0151,1069503658,Summit Family Clinic #151,Primary Care,In-Network,TX
+PR0152,1753748896,Meadowbrook Family Clinic #152,Primary Care,Out-of-Network,CA
+PR0153,1677817768,Silverline Medical Center #153,General Hospital,Out-of-Network,MN
+PR0154,1467622277,Brookfield Imaging #154,Radiology,Out-of-Network,GA
+PR0155,1584967117,Brookfield Heart Center #155,Cardiology,Out-of-Network,GA
+PR0156,1336950307,Lakeside Ortho & Spine #156,Orthopedics,Out-of-Network,GA
+PR0157,1577942131,Pinecrest Heart Center #157,Cardiology,In-Network,NY
+PR0158,1956273955,Oak Valley Cancer Institute #158,Oncology,Out-of-Network,MN
+PR0159,1457458413,Summit Ortho & Spine #159,Orthopedics,In-Network,CA
+PR0160,1448925545,Oak Valley Heart Center #160,Cardiology,Out-of-Network,CA
+PR0161,1918601089,Westfield Children's Clinic #161,Pediatrics,In-Network,GA
+PR0162,1853616157,Pinecrest Heart Center #162,Cardiology,In-Network,OH
+PR0163,1021420306,Riverbend Family Clinic #163,Primary Care,In-Network,NY
+PR0164,1672105734,Cedar Ridge Family Clinic #164,Primary Care,In-Network,OH
+PR0165,1804238185,Westfield Imaging #165,Radiology,In-Network,AZ
+PR0166,1074058109,Meadowbrook Pharmacy #166,Pharmacy,In-Network,GA
+PR0167,1564894155,Harbor Family Clinic #167,Primary Care,In-Network,NY
+PR0168,1372150617,Harbor Wellness Group #168,Behavioral Health,In-Network,TX
+PR0169,1678738483,Oak Valley Imaging #169,Radiology,In-Network,AZ
+PR0170,1383270891,Westfield Pharmacy #170,Pharmacy,In-Network,MN
+PR0171,1155049451,Oak Valley Heart Center #171,Cardiology,In-Network,GA
+PR0172,1398807756,Northgate Emergency Care #172,Emergency Medicine,In-Network,FL
+PR0173,1469345117,Summit Cancer Institute #173,Oncology,In-Network,AZ
+PR0174,1426838469,Silverline Pharmacy #174,Pharmacy,In-Network,FL
+PR0175,1250660996,Harbor Family Clinic #175,Primary Care,Out-of-Network,AZ
+PR0176,1945885145,Silverline Family Clinic #176,Primary Care,In-Network,GA
+PR0177,1591376434,Summit Wellness Group #177,Behavioral Health,In-Network,OH
+PR0178,1639282778,Summit Family Clinic #178,Primary Care,Out-of-Network,FL
+PR0179,1556238549,Harbor Wellness Group #179,Behavioral Health,In-Network,NY
+PR0180,1348641791,Lakeside Family Clinic #180,Primary Care,In-Network,FL
+PR0181,1970262644,Cedar Ridge Family Clinic #181,Primary Care,In-Network,GA
+PR0182,1055163089,Westfield Children's Clinic #182,Pediatrics,In-Network,MN
+PR0183,1447932261,Westfield Emergency Care #183,Emergency Medicine,Out-of-Network,AZ
+PR0184,1450317146,Northgate Cancer Institute #184,Oncology,In-Network,GA
+PR0185,1388824486,Riverbend Wellness Group #185,Behavioral Health,In-Network,MN
+PR0186,1182886629,Cedar Ridge Imaging #186,Radiology,In-Network,MN
+PR0187,1479188172,Summit Imaging #187,Radiology,In-Network,MN
+PR0188,1022014728,Lakeside Cancer Institute #188,Oncology,Out-of-Network,TX
+PR0189,1778163827,Harbor Heart Center #189,Cardiology,In-Network,MN
+PR0190,1710724328,Silverline Imaging #190,Radiology,In-Network,TX
+PR0191,1757647710,Brookfield Pharmacy #191,Pharmacy,Out-of-Network,NY
+PR0192,1151013611,Northgate Pharmacy #192,Pharmacy,In-Network,CA
+PR0193,1934204039,Lakeside Family Clinic #193,Primary Care,In-Network,AZ
+PR0194,1188342786,Pinecrest Heart Center #194,Cardiology,Out-of-Network,TX
+PR0195,1588307305,Silverline Imaging #195,Radiology,In-Network,MN
+PR0196,1968293960,Lakeside Emergency Care #196,Emergency Medicine,In-Network,NY
+PR0197,1255796388,Harbor Children's Clinic #197,Pediatrics,In-Network,TX
+PR0198,1093868930,Summit Pharmacy #198,Pharmacy,In-Network,MN
+PR0199,1362984273,Harbor Heart Center #199,Cardiology,Out-of-Network,TX
+PR0200,1013580687,Silverline Family Clinic #200,Primary Care,In-Network,CA
+PR0201,1604570009,Pinecrest Medical Center #201,General Hospital,In-Network,CA
+PR0202,1777469965,Pinecrest Cancer Institute #202,Oncology,In-Network,GA
+PR0203,1628791248,Riverbend Wellness Group #203,Behavioral Health,In-Network,FL
+PR0204,1246628590,Silverline Family Clinic #204,Primary Care,Out-of-Network,GA
+PR0205,1042592576,Silverline Family Clinic #205,Primary Care,In-Network,TX
+PR0206,1318187819,Summit Pharmacy #206,Pharmacy,In-Network,TX
+PR0207,1910713782,Cedar Ridge Heart Center #207,Cardiology,In-Network,TX
+PR0208,1365017905,Oak Valley Family Clinic #208,Primary Care,In-Network,FL
+PR0209,1926059338,Westfield Emergency Care #209,Emergency Medicine,Out-of-Network,NY
+PR0210,1969249880,Brookfield Pharmacy #210,Pharmacy,In-Network,GA
+PR0211,1798511402,Silverline Pharmacy #211,Pharmacy,In-Network,OH
+PR0212,1235170353,Meadowbrook Pharmacy #212,Pharmacy,Out-of-Network,TX
+PR0213,1249804432,Northgate Family Clinic #213,Primary Care,In-Network,CA
+PR0214,1134643570,Cedar Ridge Wellness Group #214,Behavioral Health,In-Network,NY
+PR0215,1348081936,Meadowbrook Family Clinic #215,Primary Care,In-Network,NY
+PR0216,1482747639,Riverbend Children's Clinic #216,Pediatrics,In-Network,GA
+PR0217,1702424189,Pinecrest Family Clinic #217,Primary Care,In-Network,NY
+PR0218,1059560614,Pinecrest Children's Clinic #218,Pediatrics,Out-of-Network,CA
+PR0219,1305738322,Westfield Family Clinic #219,Primary Care,In-Network,FL
+PR0220,1351329664,Cedar Ridge Wellness Group #220,Behavioral Health,In-Network,CA
+PR0221,1387744765,Brookfield Pharmacy #221,Pharmacy,In-Network,AZ
+PR0222,1582459459,Riverbend Family Clinic #222,Primary Care,In-Network,GA
+PR0223,1668248898,Meadowbrook Family Clinic #223,Primary Care,In-Network,NY
+PR0224,1943629995,Oak Valley Family Clinic #224,Primary Care,In-Network,NY
+PR0225,1034014404,Riverbend Cancer Institute #225,Oncology,In-Network,CA
+PR0226,1137839902,Lakeside Wellness Group #226,Behavioral Health,In-Network,OH
+PR0227,1283407979,Pinecrest Emergency Care #227,Emergency Medicine,In-Network,MN
+PR0228,1035997258,Westfield Heart Center #228,Cardiology,In-Network,FL
+PR0229,1385347916,Meadowbrook Pharmacy #229,Pharmacy,In-Network,OH
+PR0230,1527037593,Brookfield Ortho & Spine #230,Orthopedics,In-Network,AZ
+PR0231,1481088883,Cedar Ridge Medical Center #231,General Hospital,In-Network,TX
+PR0232,1659845985,Summit Ortho & Spine #232,Orthopedics,In-Network,OH
+PR0233,1844091364,Cedar Ridge Imaging #233,Radiology,In-Network,OH
+PR0234,1178912362,Silverline Children's Clinic #234,Pediatrics,In-Network,MN
+PR0235,1719986291,Silverline Family Clinic #235,Primary Care,In-Network,NY
+PR0236,1356869162,Pinecrest Imaging #236,Radiology,In-Network,AZ
+PR0237,1904055288,Pinecrest Family Clinic #237,Primary Care,In-Network,TX
+PR0238,1009430276,Westfield Cancer Institute #238,Oncology,In-Network,OH
+PR0239,1104250232,Westfield Imaging #239,Radiology,In-Network,CA
+PR0240,1463442980,Pinecrest Heart Center #240,Cardiology,In-Network,OH
+PR0241,1500812975,Silverline Family Clinic #241,Primary Care,In-Network,OH
+PR0242,1492449186,Riverbend Medical Center #242,General Hospital,In-Network,CA
+PR0243,1322299384,Meadowbrook Family Clinic #243,Primary Care,Out-of-Network,AZ
+PR0244,1636715566,Brookfield Family Clinic #244,Primary Care,In-Network,NY
+PR0245,1830842205,Brookfield Children's Clinic #245,Pediatrics,In-Network,CA
+PR0246,1936047056,Westfield Family Clinic #246,Primary Care,In-Network,GA
+PR0247,1559026410,Summit Children's Clinic #247,Pediatrics,Out-of-Network,OH
+PR0248,1367244624,Pinecrest Emergency Care #248,Emergency Medicine,In-Network,OH
+PR0249,1106112175,Pinecrest Medical Center #249,General Hospital,In-Network,FL
+PR0250,1283031875,Northgate Heart Center #250,Cardiology,In-Network,MN
+PR0251,1352458147,Lakeside Family Clinic #251,Primary Care,In-Network,CA
+PR0252,1758534605,Silverline Pharmacy #252,Pharmacy,In-Network,OH
+PR0253,1465864479,Silverline Medical Center #253,General Hospital,In-Network,FL
+PR0254,1697967670,Summit Family Clinic #254,Primary Care,Out-of-Network,TX
+PR0255,1141752820,Northgate Imaging #255,Radiology,In-Network,GA
+PR0256,1378103586,Brookfield Pharmacy #256,Pharmacy,In-Network,FL
+PR0257,1790765395,Oak Valley Wellness Group #257,Behavioral Health,In-Network,GA
+PR0258,1367370106,Brookfield Heart Center #258,Cardiology,Out-of-Network,TX
+PR0259,1453683517,Lakeside Imaging #259,Radiology,In-Network,CA
+PR0260,1274512986,Oak Valley Imaging #260,Radiology,In-Network,MN
+PR0261,1935883476,Brookfield Emergency Care #261,Emergency Medicine,In-Network,OH
+PR0262,1101974710,Lakeside Pharmacy #262,Pharmacy,In-Network,CA
+PR0263,1883833452,Pinecrest Ortho & Spine #263,Orthopedics,In-Network,TX
+PR0264,1674945854,Lakeside Family Clinic #264,Primary Care,In-Network,AZ
+PR0265,1948420544,Riverbend Emergency Care #265,Emergency Medicine,Out-of-Network,OH
+PR0266,1149684549,Westfield Pharmacy #266,Pharmacy,In-Network,NY
+PR0267,1108807036,Harbor Wellness Group #267,Behavioral Health,In-Network,AZ
+PR0268,1183591981,Silverline Family Clinic #268,Primary Care,In-Network,MN
+PR0269,1267055083,Brookfield Wellness Group #269,Behavioral Health,In-Network,GA
+PR0270,1226197052,Northgate Family Clinic #270,Primary Care,In-Network,NY
+PR0271,1371085593,Cedar Ridge Pharmacy #271,Pharmacy,In-Network,GA
+PR0272,1274151958,Brookfield Emergency Care #272,Emergency Medicine,In-Network,AZ
+PR0273,1743413368,Harbor Family Clinic #273,Primary Care,Out-of-Network,CA
+PR0274,1274294013,Brookfield Family Clinic #274,Primary Care,In-Network,GA
+PR0275,1293688499,Lakeside Family Clinic #275,Primary Care,Out-of-Network,OH
+PR0276,1848899258,Brookfield Family Clinic #276,Primary Care,Out-of-Network,CA
+PR0277,1207019429,Northgate Family Clinic #277,Primary Care,In-Network,FL
+PR0278,1348749251,Pinecrest Wellness Group #278,Behavioral Health,In-Network,OH
+PR0279,1343745850,Riverbend Family Clinic #279,Primary Care,In-Network,FL
+PR0280,1458773734,Silverline Pharmacy #280,Pharmacy,In-Network,CA
+PR0281,1310951533,Oak Valley Family Clinic #281,Primary Care,Out-of-Network,NY
+PR0282,1581514711,Lakeside Cancer Institute #282,Oncology,In-Network,FL
+PR0283,1814615032,Summit Emergency Care #283,Emergency Medicine,In-Network,CA
+PR0284,1466341320,Summit Children's Clinic #284,Pediatrics,In-Network,CA
+PR0285,1989813205,Meadowbrook Heart Center #285,Cardiology,In-Network,TX
+PR0286,1640013720,Meadowbrook Emergency Care #286,Emergency Medicine,In-Network,CA
+PR0287,1303861916,Riverbend Family Clinic #287,Primary Care,In-Network,GA
+PR0288,1265756919,Summit Children's Clinic #288,Pediatrics,In-Network,NY
+PR0289,1051826398,Riverbend Medical Center #289,General Hospital,In-Network,CA
+PR0290,1006986225,Lakeside Children's Clinic #290,Pediatrics,In-Network,GA
+PR0291,1721715168,Oak Valley Family Clinic #291,Primary Care,In-Network,FL
+PR0292,1754835790,Summit Family Clinic #292,Primary Care,In-Network,MN
+PR0293,1480540408,Riverbend Imaging #293,Radiology,In-Network,TX
+PR0294,1150368198,Harbor Pharmacy #294,Pharmacy,In-Network,NY
+PR0295,1433772592,Oak Valley Family Clinic #295,Primary Care,Out-of-Network,AZ
+PR0296,1561970950,Harbor Ortho & Spine #296,Orthopedics,In-Network,AZ
+PR0297,1351199015,Riverbend Family Clinic #297,Primary Care,In-Network,NY
+PR0298,1497604043,Westfield Wellness Group #298,Behavioral Health,In-Network,NY
+PR0299,1470380625,Lakeside Wellness Group #299,Behavioral Health,In-Network,MN
+PR0300,1122661579,Harbor Heart Center #300,Cardiology,Out-of-Network,NY
+PR0301,1136134239,Riverbend Family Clinic #301,Primary Care,In-Network,TX
+PR0302,1612157768,Pinecrest Imaging #302,Radiology,In-Network,NY
+PR0303,1883751234,Harbor Imaging #303,Radiology,In-Network,TX
+PR0304,1929820806,Silverline Imaging #304,Radiology,Out-of-Network,MN
+PR0305,1648906886,Cedar Ridge Family Clinic #305,Primary Care,In-Network,FL
+PR0306,1919181224,Silverline Family Clinic #306,Primary Care,In-Network,FL
+PR0307,1376264972,Harbor Family Clinic #307,Primary Care,In-Network,GA
+PR0308,1738118897,Oak Valley Emergency Care #308,Emergency Medicine,Out-of-Network,CA
+PR0309,1510521262,Meadowbrook Ortho & Spine #309,Orthopedics,In-Network,GA
+PR0310,1389415745,Cedar Ridge Family Clinic #310,Primary Care,Out-of-Network,GA
+PR0311,1686335620,Riverbend Wellness Group #311,Behavioral Health,Out-of-Network,OH
+PR0312,1921212541,Brookfield Wellness Group #312,Behavioral Health,In-Network,CA
+PR0313,1467842811,Harbor Medical Center #313,General Hospital,In-Network,CA
+PR0314,1659757547,Silverline Imaging #314,Radiology,Out-of-Network,TX
+PR0315,1222032849,Lakeside Imaging #315,Radiology,In-Network,MN
+PR0316,1503732915,Oak Valley Ortho & Spine #316,Orthopedics,In-Network,FL
+PR0317,1662162898,Northgate Family Clinic #317,Primary Care,In-Network,NY
+PR0318,1284078011,Cedar Ridge Emergency Care #318,Emergency Medicine,In-Network,TX
+PR0319,1788762719,Riverbend Ortho & Spine #319,Orthopedics,Out-of-Network,OH
+PR0320,1755248492,Cedar Ridge Cancer Institute #320,Oncology,Out-of-Network,CA
+PR0321,1852795842,Silverline Imaging #321,Radiology,In-Network,OH
+PR0322,1797356607,Riverbend Children's Clinic #322,Pediatrics,In-Network,CA
+PR0323,1558973736,Westfield Emergency Care #323,Emergency Medicine,Out-of-Network,AZ
+PR0324,1947098834,Cedar Ridge Family Clinic #324,Primary Care,In-Network,MN
+PR0325,1286067039,Pinecrest Wellness Group #325,Behavioral Health,In-Network,GA
+PR0326,1056833831,Summit Pharmacy #326,Pharmacy,In-Network,AZ
+PR0327,1389111258,Pinecrest Imaging #327,Radiology,In-Network,NY
+PR0328,1421156066,Oak Valley Heart Center #328,Cardiology,In-Network,TX
+PR0329,1623392229,Northgate Family Clinic #329,Primary Care,In-Network,CA
+PR0330,1222994750,Lakeside Wellness Group #330,Behavioral Health,Out-of-Network,TX
+PR0331,1914685366,Silverline Children's Clinic #331,Pediatrics,Out-of-Network,TX
+PR0332,1470949925,Summit Medical Center #332,General Hospital,In-Network,MN
+PR0333,1452157122,Pinecrest Heart Center #333,Cardiology,In-Network,NY
+PR0334,1042179646,Summit Wellness Group #334,Behavioral Health,In-Network,GA
+PR0335,1029931569,Oak Valley Heart Center #335,Cardiology,In-Network,NY
+PR0336,1805225000,Westfield Cancer Institute #336,Oncology,In-Network,GA
+PR0337,1635279565,Riverbend Family Clinic #337,Primary Care,Out-of-Network,CA
+PR0338,1381718765,Summit Pharmacy #338,Pharmacy,In-Network,OH
+PR0339,1445199005,Westfield Cancer Institute #339,Oncology,In-Network,OH
+PR0340,1803762085,Lakeside Imaging #340,Radiology,In-Network,FL
+PR0341,1885333475,Westfield Family Clinic #341,Primary Care,In-Network,OH
+PR0342,1433005797,Silverline Emergency Care #342,Emergency Medicine,In-Network,CA
+PR0343,1396260778,Northgate Heart Center #343,Cardiology,In-Network,OH
+PR0344,1408740384,Meadowbrook Heart Center #344,Cardiology,In-Network,NY
+PR0345,1475163240,Meadowbrook Ortho & Spine #345,Orthopedics,In-Network,CA
+PR0346,1300660679,Meadowbrook Ortho & Spine #346,Orthopedics,In-Network,NY
+PR0347,1295431183,Riverbend Medical Center #347,General Hospital,In-Network,TX
+PR0348,1458789500,Brookfield Children's Clinic #348,Pediatrics,In-Network,MN
+PR0349,1807051966,Harbor Wellness Group #349,Behavioral Health,In-Network,OH
+PR0350,1285510244,Meadowbrook Family Clinic #350,Primary Care,In-Network,TX
+PR0351,1436227333,Cedar Ridge Ortho & Spine #351,Orthopedics,Out-of-Network,FL
+PR0352,1260503627,Cedar Ridge Imaging #352,Radiology,Out-of-Network,TX
+PR0353,1481913757,Harbor Pharmacy #353,Pharmacy,In-Network,CA
+PR0354,1112637201,Harbor Heart Center #354,Cardiology,In-Network,MN
+PR0355,1492361183,Pinecrest Imaging #355,Radiology,In-Network,GA
+PR0356,1702015749,Pinecrest Medical Center #356,General Hospital,In-Network,MN
+PR0357,1676493736,Silverline Medical Center #357,General Hospital,In-Network,NY
+PR0358,1628401533,Silverline Wellness Group #358,Behavioral Health,In-Network,CA
+PR0359,1541406279,Meadowbrook Children's Clinic #359,Pediatrics,In-Network,NY
+PR0360,1603951967,Northgate Medical Center #360,General Hospital,In-Network,CA
+PR0361,1434769633,Harbor Pharmacy #361,Pharmacy,In-Network,AZ
+PR0362,1941132343,Lakeside Ortho & Spine #362,Orthopedics,Out-of-Network,OH
+PR0363,1654801057,Oak Valley Emergency Care #363,Emergency Medicine,Out-of-Network,AZ
+PR0364,1297020307,Harbor Children's Clinic #364,Pediatrics,In-Network,FL
+PR0365,1637497715,Meadowbrook Family Clinic #365,Primary Care,In-Network,MN
+PR0366,1710474764,Northgate Family Clinic #366,Primary Care,In-Network,MN
+PR0367,1359433561,Lakeside Family Clinic #367,Primary Care,In-Network,OH
+PR0368,1469611864,Riverbend Cancer Institute #368,Oncology,In-Network,CA
+PR0369,1575814449,Riverbend Wellness Group #369,Behavioral Health,Out-of-Network,OH
+PR0370,1980589323,Cedar Ridge Family Clinic #370,Primary Care,In-Network,TX
+PR0371,1542421134,Brookfield Family Clinic #371,Primary Care,In-Network,FL
+PR0372,1575441397,Silverline Family Clinic #372,Primary Care,In-Network,OH
+PR0373,1913134154,Harbor Emergency Care #373,Emergency Medicine,In-Network,MN
+PR0374,1797980474,Summit Heart Center #374,Cardiology,Out-of-Network,GA
+PR0375,1033232663,Brookfield Emergency Care #375,Emergency Medicine,In-Network,FL
+PR0376,1465813217,Harbor Family Clinic #376,Primary Care,Out-of-Network,MN
+PR0377,1702240444,Silverline Imaging #377,Radiology,In-Network,NY
+PR0378,1337001134,Oak Valley Emergency Care #378,Emergency Medicine,In-Network,OH
+PR0379,1242237790,Oak Valley Medical Center #379,General Hospital,In-Network,AZ
+PR0380,1524369953,Pinecrest Imaging #380,Radiology,In-Network,TX
+PR0381,1577247833,Cedar Ridge Wellness Group #381,Behavioral Health,In-Network,FL
+PR0382,1667159517,Summit Family Clinic #382,Primary Care,In-Network,GA
+PR0383,1308679430,Northgate Cancer Institute #383,Oncology,In-Network,NY
+PR0384,1641166265,Westfield Heart Center #384,Cardiology,In-Network,TX
+PR0385,1754294287,Meadowbrook Pharmacy #385,Pharmacy,In-Network,FL
+PR0386,1427733573,Lakeside Cancer Institute #386,Oncology,In-Network,FL
+PR0387,1589463647,Meadowbrook Imaging #387,Radiology,In-Network,NY
+PR0388,1660571259,Silverline Wellness Group #388,Behavioral Health,Out-of-Network,CA
+PR0389,1613940582,Brookfield Family Clinic #389,Primary Care,Out-of-Network,MN
+PR0390,1288093300,Riverbend Children's Clinic #390,Pediatrics,In-Network,TX
+PR0391,1131399340,Riverbend Children's Clinic #391,Pediatrics,In-Network,NY
+PR0392,1484273746,Silverline Family Clinic #392,Primary Care,In-Network,CA
+PR0393,1300016244,Brookfield Cancer Institute #393,Oncology,In-Network,FL
+PR0394,1352465447,Oak Valley Children's Clinic #394,Pediatrics,In-Network,AZ
+PR0395,1798173305,Summit Family Clinic #395,Primary Care,In-Network,AZ
+PR0396,1418897182,Silverline Family Clinic #396,Primary Care,In-Network,TX
+PR0397,1911827737,Silverline Family Clinic #397,Primary Care,In-Network,OH
+PR0398,1675941474,Brookfield Heart Center #398,Cardiology,In-Network,NY
+PR0399,1166858400,Cedar Ridge Imaging #399,Radiology,In-Network,TX
+PR0400,1156472095,Westfield Family Clinic #400,Primary Care,Out-of-Network,FL

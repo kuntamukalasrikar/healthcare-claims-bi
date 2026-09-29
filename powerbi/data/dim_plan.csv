@@ -1,0 +1,6 @@
+plan_id,plan_name,line_of_business,monthly_premium
+P01,Choice Plus PPO,Commercial,620
+P02,Select HMO,Commercial,480
+P03,Medicare Advantage Gold,Medicare Advantage,1150
+P04,Medicare Advantage Silver,Medicare Advantage,980
+P05,Community Medicaid,Medicaid,540
