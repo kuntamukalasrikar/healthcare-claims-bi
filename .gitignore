@@ -1,0 +1,3 @@
+data/claims_warehouse.db
+__pycache__/
+*.pyc
